@@ -1,0 +1,43 @@
+ <body onload="draw();">
+
+
+
+<div id="all">
+	<div id="canv">
+<center><canvas id="canvas" width="600" height="600"></canvas></center>
+</div><div id="div1">
+
+<input id="userInput" type="number" placeholder="a">
+<input id="userInput1" type="number" placeholder="b">
+<input id="userInput2" type="number" placeholder="c">
+<input id="userInput3" type="number" placeholder="d">
+<button onclick="draw()">Submit</button><br>
+<h1>y = <p3>a</p3>⋅x<sup><p3>b</p3></sup>+<p3>c</p3>⋅x<sup><p3>d</p3></sup>
+<br><br>
+<p2>Punkt an Stelle X: </p2>
+<input id="userInput3" type="number"><br>
+</h1>
+</div>
+</div>
+
+<script src="script3.js">
+
+</script>
+
+
+
+<style>
+	h1 {font-size:20px; font-family:arial;text-align: center;}
+	p2 {font-size:20px; font-family:arial;}
+	p3 {font-size:20px; font-family:arial; color:#22DD33;}
+	#userInput  {width:40px;}
+	#userInput1 {width:40px;}
+	#userInput2 {width:40px;}
+	#userInput3 {width:40px;}
+	#all {float:left;width:100%;margin:-40px;margin-top:10px;}
+	#div1 {float:right;}
+	#canv {float:left; padding-left: 40px;}
+	canvas {border: 1px solid black;background-color: black;}
+	body {background-color: white;}
+</style>
+</body>
