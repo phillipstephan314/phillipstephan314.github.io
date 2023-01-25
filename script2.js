@@ -1,1 +1,0 @@
-document.write('Website erstellt und programmiert von Phillip St.');
