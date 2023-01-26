@@ -42,10 +42,10 @@ function Null(){
     let a = document.getElementById("userInput").value;
     let b = document.getElementById("userInput1").value;
     let c = document.getElementById("userInput2").value;
-let NS1 = -(b/2)+Math.sqrt(Math.pow((b/2),2)-c);
+let NS1 = (Math.sqrt(Math.pow(b,2)-4*a*c)-b)/(2*a);
 let Nsrund1 = Math.round((NS1 + Number.EPSILON) * 100)/100;
 
-let NS2 = -(b/2)-Math.sqrt(Math.pow((b/2),2)-c);
+let NS2 = ((-Math.sqrt(Math.pow(b,2)-4*a*c)-b)/(2*a));
 let Nsrund2 = Math.round((NS2 + Number.EPSILON) * 100)/100;
 
 if (Nsrund1){
@@ -53,6 +53,9 @@ if (Nsrund1){
 }
 else if (Nsrund2){
     alert('Nullstellen der Funktion liegen bei S( '+Nsrund1+' / 0 ) und S( '+Nsrund2+' / 0 ) ');
+}
+else if (a!=0,b==0,c==0){
+    alert('Nullstelle bei S( 0 / 0 )');
 }
 else {alert('Keine Nullstelle vorhanden');}
 
