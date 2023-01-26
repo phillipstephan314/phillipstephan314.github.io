@@ -1,11 +1,9 @@
-#div1{float:left;width:18%;height:95%;border:solid;background-color:#606c38;border-color:#00000000;border-radius:15px;color:white; margin-left:15px; margin-bottom:10px;margin-top:15px;padding:5px;}
+#div1{float:left;width:18%;height:100%;position: fixed;border:solid;background-color:rgb(32,33,35);border-color:#00000000;border-radius:0px;color:white;margin:-10px;}
 h1 {font-size:45px;font-family:arial;}
 #links{color:white; text-decoration:none;font-size:20px;font-family:arial;}
 #divlinks{margin:10px;}
-#div2{float:right;width:75%;height:95%;background-color:#00000000; color:white;margin-top:80px;}
-body{background-color:#dda15e;}
+#div2{float:right;width:75%;height:81%;background-color:#00000000; color:white;margin-top:40px;margin-right:3%;}
+body{background-color:rgb(52,53,65);}
 h2 {font-size:45px;font-family:arial;color:white;text-decoration:none;}
-
-
-606c38-283618-fefae0-dda15e-bc6c25
-oliv-dunkelgrün-weiß-hellorange-orange
+p1 {font-size:30px;font-family:arial;color:white;text-decoration:none;}
+p2 {font-size:30px;font-family:arial;color:rgb(32,33,35);text-decoration:none;}

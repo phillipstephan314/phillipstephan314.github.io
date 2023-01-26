@@ -10,7 +10,6 @@ function draw(){
     let a = document.getElementById("userInput").value;
     let b = document.getElementById("userInput1").value;
     let c = document.getElementById("userInput2").value;
-    let d = document.getElementById("userInput3").value;  
     ctx.clearRect(0,0,600,600);
     let z=1;
     ctx.fillStyle = "black";
@@ -22,13 +21,13 @@ z++;
     ctx.fillStyle = "rgb(236,236,241)";
 let x=-10;
 while(x<10){
-    y=a*Math.pow(x,b)+c*Math.pow(x,d);
+    y=(a*Math.pow(x,2)+b*Math.pow(x,1)+c*Math.pow(x,0));
 
 ctx.fillRect(300+30*x,300+(1-30*y),2,2);
-if(Math.abs(Math.abs(a)+Math.abs(b)+Math.abs(c)+Math.abs(d))>20){
+if(Math.abs(Math.abs(a)+Math.abs(b)+Math.abs(c))>20){
 x=x+0.00015;
 }
-else if(Math.abs(Math.abs(a)+Math.abs(b)+Math.abs(c)+Math.abs(d))>10){
+else if(Math.abs(Math.abs(a)+Math.abs(b)+Math.abs(c))>10){
     x=x+0.0003;
 }
 else{
@@ -43,10 +42,18 @@ function Null(){
     let a = document.getElementById("userInput").value;
     let b = document.getElementById("userInput1").value;
     let c = document.getElementById("userInput2").value;
-    let d = document.getElementById("userInput3").value;  
-let NS = Math.pow((-c/a),(1/(b-d)));
-let NSs = Nsrund.toString();
-let Nsrund = Math.round((NS + Number.EPSILON) * 100)/100;
-alert('NUllstelle der Funktion liegt bei S('+NSs);
+let NS1 = -(b/2)+Math.sqrt(Math.pow((b/2),2)-c);
+let Nsrund1 = Math.round((NS1 + Number.EPSILON) * 100)/100;
+
+let NS2 = -(b/2)-Math.sqrt(Math.pow((b/2),2)-c);
+let Nsrund2 = Math.round((NS2 + Number.EPSILON) * 100)/100;
+
+if (Nsrund1){
+    alert('Nullstellen der Funktion liegen bei S( '+Nsrund1+' / 0 ) und S( '+Nsrund2+' / 0 ) ');
+}
+else if (Nsrund2){
+    alert('Nullstellen der Funktion liegen bei S( '+Nsrund1+' / 0 ) und S( '+Nsrund2+' / 0 ) ');
+}
+else {alert('Keine Nullstelle vorhanden');}
 
 }
