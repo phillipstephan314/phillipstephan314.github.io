@@ -51,12 +51,16 @@ let Nsrund2 = Math.round((NS2 + Number.EPSILON) * 100)/100;
 if (Nsrund1){
     alert('Nullstellen der Funktion liegen bei S( '+Nsrund1+' / 0 ) und S( '+Nsrund2+' / 0 ) ');
 }
+else if(a==0,b!=0){
+    alert('Nullstelle bei S( '+((-c)/b)+' / 0 )');
+}
 else if (Nsrund2){
     alert('Nullstellen der Funktion liegen bei S( '+Nsrund1+' / 0 ) und S( '+Nsrund2+' / 0 ) ');
 }
 else if (a!=0,b==0,c==0){
     alert('Nullstelle bei S( 0 / 0 )');
 }
+
 else {alert('Keine Nullstelle vorhanden');}
 
 }

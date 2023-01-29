@@ -50,3 +50,7 @@ let Nsrund = Math.round((NS + Number.EPSILON) * 100)/100;
 alert('NUllstelle der Funktion liegt bei S('+NSs);
 
 }
+function chBackcolor() {
+   document.body.style.background = '#FCEEF5';
+	document.div1.style.background = 'white';
+}
