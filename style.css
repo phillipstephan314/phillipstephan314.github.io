@@ -77,7 +77,7 @@ body{
                 }
                 
     }
-@media (max-width: 900px) and (min-height:700px){
+@media (max-width: 1080px) and (min-height:1600px){
     #div2{
         float:none;
         margin:8%;
@@ -133,7 +133,7 @@ body{
         color:white;
     }
 }
-@media (max-width: 600px) and (min-height:700px){
+@media (max-width: 1080px) and (min-height:1921px){
 
     h2 {
         font-size:30px;
