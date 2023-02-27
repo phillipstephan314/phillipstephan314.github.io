@@ -9,17 +9,16 @@
 <h1><center> Inhalt </center></h1>
 <div id="divlinks"><center>
 <button id="links" onclick="window.location.href='../index.html';">Hauptseite</button><br>
+<button id="links" onclick="window.location.href='../Poly2/graph.html';">Quadratische Funktion</button><br>
 <button id="links" onclick="window.location.href='../Poly3/graph.html';">Kubische Funktion</button><br>
-<button id="links" onclick="window.location.href='../efunc/graph.html';">e-Funktion</button><br>
 </center></div>
 </div>
 
 <div id="polydiv2"><center>
-    <p1>y=<p3>a</p3>⋅x<sup>2</sup>+<p3>b</p3>⋅x+<p3>c</p3></p1>
+    <p1 id="p11">y=<p3>a</p3>⋅e<sup>x</sup>+<p3>b</p3></p1>
  <br>
     <input onchange="draw()" id="userInput" class="input" type="number" placeholder="a">
 <input onchange="draw()" id="userInput1" class="input"  type="number" placeholder="b">
-<input onchange="draw()" id="userInput2"  class="input" type="number" placeholder="c">
 <br><br><br><br>
 
 <canvas id="canvas" width="600" height="600" style="border:1px solid #000000;">
@@ -28,7 +27,7 @@
 
 
     
-        <p2><center>Nullstelle berechnen </p2><button id="submit" onclick="Null()">Submit</button>
+       
     </center>
 
 </div>

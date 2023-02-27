@@ -10,27 +10,131 @@
     border-radius:0px;
     color:white;
     margin:-10px;
+    transition:0.5s;
     }
 
 #div2{
 margin:4%;
 float:right;
-margin-right:20%;
+transition:0.5s;
+margin-right:25%
 }
-#h1 {
+
+polydiv2{
+
+    margin:4%;
+    float:right;
+    transition:0.5s;
+    margin-right:20%
+
+}
+#h1, h1 {
     font-size:40px;
     font-family:arial;
+    transition:0.5s;
     }
-h2 {
+p1 {
     font-size:50px;
     font-family:arial;
     color:white;
     text-decoration:none;
-    }
-body{
-    background-color:rgb(52,53,65);
+    transition:0.5s;
     }
 
+h2{
+
+    font-size:65px;
+    font-family:arial;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    transition:0.5s;
+
+}
+
+p3{
+
+    font-size:50px;
+    font-family:arial;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    transition:0.5s;
+
+}
+
+p2{
+
+    font-size:40px;
+    font-family:arial;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    margin-top:40%;
+    transition:0.5s;
+
+}
+
+#Nullstellen{
+    margin-top:4%;
+    float:left;
+    margin-left:5%;
+    transition:0.5s;
+}
+
+body{
+    background-color:rgb(52,53,65);
+    transition:0.5s;
+    }
+
+#submit{
+height: 60px;
+width:  150px;
+text-align: center;
+margin:1%;
+margin-bottom:-10%;
+background:rgb(32,33,35) ;
+border-color:transparent;
+font-weight: bold;
+border-radius:15px;
+
+font-size:25px;
+font-family:arial;
+color:rgb(255, 255, 255);
+text-decoration:none;
+transition:0.2s;
+}
+
+
+#submit:hover{
+    height: 70px;
+    width:  160px;
+    text-align: center;
+    margin:1%;
+    margin-bottom:-3%;
+    background:rgb(0, 0, 0) ;
+    border-color:transparent;
+    font-weight: bold;
+    border-radius:15px;
+    
+    font-size:40px;
+    font-family:arial;
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    
+    }
+    
+    
+.input {
+height: 60px;
+width:  60px;
+font-size:150%;
+text-align: center;
+margin:2%;
+margin-bottom:-3%;
+background:rgb(32,33,35) ;
+border-color:transparent;
+color:white;
+font-weight: bold;
+border-radius:10%;
+}
 #links{
     color:white;
     text-decoration:none;
@@ -55,17 +159,17 @@ body{
     height:7%; 
     border-color:#00000000; 
     border-radius:8px; 
-    background-color:#000000FF; 
+    background-color:#FFFFFF44; 
     margin:3%;
     transition:0.5s;
     margin-top:18.5%;
     margin-bottom:21.5%;
     }
 
-    @media (max-width: 1400px) and (min-height:700px){
+    @media (max-width: 1700px) and (min-height:700px){
 
         h2 {
-            font-size:35px;
+            font-size:40px;
             font-family:arial;
             color:white;
             text-decoration:none;
@@ -74,10 +178,12 @@ body{
             #div2{
                 float:right;
                 margin:8%;
+                margin-right:20%;
+		margin-top:2%;
                 }
                 
     }
-@media (max-width: 1080px) and (min-height:1600px){
+@media (max-width: 1080px) and (min-height:700px){
     #div2{
         float:none;
         margin:8%;
@@ -101,7 +207,7 @@ body{
         font-size:40px;
         font-family:arial; 
         width:80%;
-        height:20%; 
+        height:40%; 
         border-color:#00000000; 
         border-radius:8px; 
         background-color:#000000AA; 
@@ -113,17 +219,18 @@ body{
         font-size:40px;
         font-family:arial; 
         width:90%;
-        height:20%; 
-        border-color:#00000000; 
+        height:40%; 
+        border-color:#000000BB; 
         border-radius:8px; 
         margin:3%;
         transition:0.5s
         }
 
     #div1{
+        overflow:scroll;
         transition:0.5s;
         width:100%;
-        height:35%;
+        height:20%;
         bottom: 0;
         position: fixed;
         border:solid;
@@ -132,8 +239,12 @@ body{
         border-radius:0px;
         color:white;
     }
+
+    h1{
+        font-size:0;
+    }
 }
-@media (max-width: 1080px) and (min-height:1921px){
+@media (max-width: 800px) and (min-height:700px){
 
     h2 {
         font-size:30px;
@@ -148,7 +259,7 @@ body{
         font-size:40px;
         font-family:arial; 
         width:92%;
-        height:20%; 
+        height:40%; 
         border-color:#00000000; 
         border-radius:8px; 
         background-color:#000000AA; 
@@ -161,13 +272,96 @@ body{
         font-size:40px;
         font-family:arial; 
         width:92%;
-        height:20%; 
-        border-color:#00000000; 
+        height:40%; 
+        border-color:#000000BB; 
         border-radius:8px; 
         margin:4%;
         margin-bottom:3%;
-        transition:0.5s
+        transition:0.5s;
         }
 
 
+}
+#table{
+
+height:600px;
+width:400px;
+border-radius:20px;
+margin-top:15%;
+background-color:rgba(32,33,35,0.8);
+transition:0.4s;
+}
+#b1{
+
+width:80px;
+height:90px;
+background-color:#FFFFFF33;
+font-size:30px;
+color:white;
+font-family:arial;
+border-color:transparent;
+border-radius:7px;
+margin-left:7.5px;
+transition:0.3s;
+
+}
+#calc{
+
+    width:320px;
+    height:90px;
+    background-color:#FFFFFFAA;
+    font-size:30px;
+    color:#00000088;
+    font-weight: bold;
+    font-family:arial;
+    border-color:transparent;
+    border-radius:7px;
+    margin-left:7.5px;
+    margin-top:7.5px;
+    margin-right:7.5px;
+    transition:0.3s;
+    
+    }
+#b1:hover{
+
+width:85px;
+height:95px;
+background-color:#FFFFFF55;
+font-size:30px;
+color:white;
+font-family:arial;
+border-color:transparent;
+border-radius:7px;
+margin:-2.5px;
+margin-left:5px;
+
+
+}
+
+#hell{
+border-color:#00000000;
+background-color: #00000000;
+color:#00000000;
+border-radius:15px;
+width:0px;
+height:0px;
+position:absolute;
+top:20px;
+right:15px;
+font-size:20px;
+transition:0.5s;
+}
+
+#dunkel{
+    border-color:#00000000;
+    background-color: #FFFFFFAA;
+    border-radius:15px;
+    color:white;
+    width:200px;
+    height:100px;
+    position:absolute;
+    top:20px;
+    right:15px;
+    font-size:20px;
+    transition:0.5s;
 }
