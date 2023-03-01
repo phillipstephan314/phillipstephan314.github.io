@@ -68,7 +68,42 @@ else if (a!=0,b==0,c==0){
 else {alert('Keine Nullstelle vorhanden');}
 
 }
-
+function ableitung(){
+    let a = document.getElementById("userInput").value;
+    let b = document.getElementById("userInput1").value;
+    if(a==0&&b==0){
+        alert('keine Funktion gegeben!')
+        return;
+    }
+    ctx.fillStyle = "#22FF44";
+    let x=-10;
+    while(x<10){
+        y=(2*a*Math.pow(x,1)+b*Math.pow(x,0));
+    
+    ctx.fillRect(300+30*x,300+(1-30*y),2,2);
+    if(Math.abs(Math.abs(a)+Math.abs(b))>20){
+    x=x+0.00015;
+    }
+    else if(Math.abs(Math.abs(a)+Math.abs(b))>10){
+        x=x+0.0003;
+    }
+    else{
+    x=x+0.001;
+    }
+    
+    } 
+    if(a==0){
+        
+        alert('Die erste Ableitung lautet f`(x)='+b)
+        
+    }
+    else if(a!=0&&b==0){
+    alert('Die erste Ableitung lautet f`(x)='+2*a+'x')
+    }
+    else{
+    alert('Die erste Ableitung lautet f`(x)='+2*a+'x+'+b)  
+    }
+  }
 
 let b1= document.getElementById('hell');
 let b2= document.getElementById('dunkel');
