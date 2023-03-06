@@ -42,3 +42,11 @@ b1.style.height='100px';
 div1.style.backgroundColor='#27474e';
 table.style.backgroundColor='#cd8b76';
 }
+function menue(){
+  if (div1.style.display === "none") {
+    div1.style.display = "block";
+  } else {
+    div1.style.display = "none";
+  }
+
+}

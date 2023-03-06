@@ -1,5 +1,11 @@
 const cn = document.getElementById("canvas");
 var ctx = cn.getContext("2d");
+ctx.font = "15px Arial";
+ i=1;while(i<10){
+ctx.fillText(i, 298+i*30, 322);
+ctx.fillText(i, 286, 307-i*30);
+i++;
+}
 let z=1;
 while(z<60){
 ctx.fillRect(30*z,300,3,3);
@@ -10,6 +16,13 @@ function draw(){
     let a = document.getElementById("userInput").value;
     let b = document.getElementById("userInput1").value;
     ctx.clearRect(0,0,600,600);
+    ctx.fillStyle = "black";
+    ctx.font = "15px Arial";
+ i=1;while(i<10){
+ctx.fillText(i, 298+i*30, 322);
+ctx.fillText(i, 286, 307-i*30);
+i++;
+}
     let z=1;
     ctx.fillStyle = "black";
 while(z<60){
@@ -98,4 +111,12 @@ b1.style.width='200px';
 b1.style.height='100px';
 
 div1.style.backgroundColor='#27474e';
+}
+function menue(){
+  if (div1.style.display === "none") {
+    div1.style.display = "block";
+  } else {
+    div1.style.display = "none";
+  }
+
 }

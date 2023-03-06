@@ -1,5 +1,11 @@
 const cn = document.getElementById("canvas");
 var ctx = cn.getContext("2d");
+ctx.font = "15px Arial";
+ i=1;while(i<10){
+ctx.fillText(i, 298+i*30, 322);
+ctx.fillText(i, 286, 307-i*30);
+i++;
+}
 let z=1;
 while(z<60){
 ctx.fillRect(30*z,300,3,3);
@@ -11,6 +17,13 @@ function draw(){
     let a = document.getElementById("userInput").value;
     let b = document.getElementById("userInput1").value;
     ctx.clearRect(0,0,600,600);
+    ctx.fillStyle = "black";
+    ctx.font = "15px Arial";
+ i=1;while(i<10){
+ctx.fillText(i, 298+i*30, 322);
+ctx.fillText(i, 286, 307-i*30);
+i++;
+}
     let z=1;
     ctx.fillStyle = "black";
 while(z<60){
@@ -78,4 +91,41 @@ b1.style.height='100px';
 
 div1.style.backgroundColor='#27474e';
 table.style.backgroundColor='#cd8b76';
+}
+
+function ableitung(){
+  let a = document.getElementById("userInput").value;
+  let b = document.getElementById("userInput1").value;
+  if(b==0&&a==0){
+alert('warum?');
+return;
+  }
+  else if(a==0){
+    alert('Die erste Ableitung f`x=0');
+  }
+  else{
+alert('Die erste Ableitung f`x='+a+'*e^x');
+  }
+  if(a!=0){
+  ctx.fillStyle = "#22FF44";
+    let x=-10;
+    while(x<10){
+        y=(a*Math.pow(Math.E,x));
+    
+    ctx.fillRect(300+30*x,300+(1-30*y),2,2);
+    
+    x=x+0.001;
+    
+    
+    } 
+  }
+
+}
+function menue(){
+  if (div1.style.display === "none") {
+    div1.style.display = "block";
+  } else {
+    div1.style.display = "none";
+  }
+
 }

@@ -1,5 +1,11 @@
 const cn = document.getElementById("canvas");
 var ctx = cn.getContext("2d");
+ctx.font = "15px Arial";
+ i=1;while(i<10){
+ctx.fillText(i, 298+i*30, 322);
+ctx.fillText(i, 286, 307-i*30);
+i++;
+}
 let z=1;
 while(z<60){
 ctx.fillRect(30*z,300,3,3);
@@ -12,6 +18,13 @@ function draw(){
     let c = document.getElementById("userInput2").value;
     let d = document.getElementById("userInput3").value;
     ctx.clearRect(0,0,600,600);
+    ctx.fillStyle = "black";
+    ctx.font = "15px Arial";
+ i=1;while(i<10){
+ctx.fillText(i, 298+i*30, 322);
+ctx.fillText(i, 286, 307-i*30);
+i++;
+}
     let z=1;
     ctx.fillStyle = "black";
 while(z<60){
@@ -112,3 +125,83 @@ b1.style.height='100px';
 div1.style.backgroundColor='#27474e';
 table.style.backgroundColor='#cd8b76';
 }
+
+function ableitung(){
+    let a = document.getElementById("userInput").value;
+    let b = document.getElementById("userInput1").value;
+    let c = document.getElementById("userInput2").value;
+    if(a==0&&b==0&&c==0){
+        alert('keine Funktion gegeben!')
+        return;
+    }
+    ctx.fillStyle = "#22FF44";
+    let x=-10;
+    while(x<10){
+        y=(3*a*Math.pow(x,2)+2*b*Math.pow(x,1)+c*Math.pow(x,0));
+    
+    ctx.fillRect(300+30*x,300+(1-30*y),2,2);
+   
+    x=x+0.001;
+    
+    } 
+    if(a==0&&b==0){
+        
+        alert('Die erste Ableitung lautet f`(x)='+c) 
+    }
+    else if(a==0&&c==0){
+    alert('Die erste Ableitung lautet f`(x)='+2*b+'x')
+    }
+    else if(b==0&&c==0){
+    alert('Die erste Ableitung lautet f`(x)='+3*a+'x^2')  
+    }
+    else if(a==0){
+        if(c<0){
+            VORZEICHEN='';
+        }
+        else{
+            VORZEICHEN='+';
+        }
+        alert('Die erste Ableitung lautet f`(x)='+2*b+'x'+VORZEICHEN+c)
+    }
+    else if(b==0){
+        if(c<0){
+            VORZEICHEN='';
+        }
+        else{
+            VORZEICHEN='+';
+        }
+        alert('Die erste Ableitung lautet f`(x)='+3*a+'x^2'+VORZEICHEN+c)
+    }
+    else if(c==0){
+        if(b<0){
+            VORZEICHEN='';
+        }
+        else{
+            VORZEICHEN='+';
+        }
+        alert('Die erste Ableitung lautet f`(x)='+3*a+'x^2'+VORZEICHEN+2*b+'x')
+    }
+    else{
+        if(b<0){
+            VORZEICHEN='';
+        }
+        else{
+            VORZEICHEN='+';
+        }
+        if(c<0){
+            VORZEICHEN2='';
+        }
+        else{
+            VORZEICHEN2='+';
+        }
+        alert('Die erste Ableitung lautet f`(x)='+3*a+'x^2'+VORZEICHEN+2*b+'x'+VORZEICHEN2+c) 
+    }
+  }
+  function menue(){
+    if (div1.style.display === "none") {
+      div1.style.display = "block";
+    } else {
+      div1.style.display = "none";
+    }
+  
+  }
