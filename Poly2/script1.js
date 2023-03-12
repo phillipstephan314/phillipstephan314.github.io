@@ -55,6 +55,10 @@ function Null(){
     let a = document.getElementById("userInput").value;
     let b = document.getElementById("userInput1").value;
     let c = document.getElementById("userInput2").value;
+    if(a==0&b==0&c==0){
+        alert('keine Funktion gegeben!')
+        return;
+    }
 let NS1 = (Math.sqrt(Math.pow(b,2)-4*a*c)-b)/(2*a);
 let Nsrund1 = Math.round((NS1 + Number.EPSILON) * 100)/100;
 

@@ -53,12 +53,22 @@ x=x+0.001;
 function Null(){
 	let a = document.getElementById("userInput").value;
 		let b = document.getElementById("userInput1").value;
+    if(a==0&b==0){
+      alert('keine Funktion gegeben!')
+      return;
+    }
 		let Null = Math.round(((-b)/a)*100)/100;
+
 		alert('Nullstelle bei ( '+Null+' / 0 )');
 }
 function ableitung(){
 
   let a = document.getElementById("userInput").value;
+  let b = document.getElementById("userInput1").value;
+  if(a==0&b==0){
+    alert('keine Funktion gegeben!')
+    return;
+  }
   let z=1;
   ctx.fillStyle = "#44FF44";
 let x=-10;

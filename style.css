@@ -14,6 +14,14 @@
     transition:0.5s;
     z-index:1;
     }
+
+    #ppl{
+position:absolute;
+right:60px;
+bottom:50px;
+height:282px;
+width:400px;
+    }
 	#image{
         float:right;
 		height:450px;
@@ -33,7 +41,7 @@
 		color:white;
 		font-family:arial;
 		font-size:30px;
-		height:1000px;
+		height:850px;
 		width:80%;
         padding-left: 300px;
         padding-right:10%;
@@ -56,7 +64,7 @@ font-weight: lighter;
 }
 #div2{
 margin:4%;
-margin-top:6%;
+margin-top:4%;
 float:right;
 transition:0.5s;
 margin-right:25%
@@ -253,6 +261,7 @@ border-radius:10%;
                 margin-right:30%;
 		        margin-top:2%;
                 }
+
                 
     }
     @media (max-width: 1700px) and (min-height:700px){
@@ -268,7 +277,7 @@ border-radius:10%;
                 float:right;
                 margin:8%;
                 margin-right:25%;
-		margin-top:6%;
+		margin-top:4%;
                 }
                 
     }
@@ -316,7 +325,7 @@ border-radius:10%;
     #div2{
         float:none;
         margin:8%;
-	margin-top:15%;
+	margin-top:14%;
         }
     h2 {
         font-size:30px;
@@ -387,6 +396,12 @@ border-radius:10%;
 			margin-right:0%;
 			margin-top:5%;
 }
+#ppl{
+    overflow:hidden;
+    position:absolute;
+    height:0px;
+    width:0px;
+        }
 }
 
 #table{
