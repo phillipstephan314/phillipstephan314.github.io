@@ -1,4 +1,5 @@
 #div1{
+	overflow:Scrollbar;
     transition:0.5s;
     float:left;
     width:200px;
@@ -13,6 +14,32 @@
     transition:0.5s;
     z-index:1;
     }
+	#image{
+        float:right;
+		height:450px;
+		width:800px;
+		background-color:black;
+		margin:5%;
+        margin-left:-20%;
+		margin-top:0%;
+		border-radius:10px;
+		shape-outside: square(10%);
+        transition:0.5s;
+	}
+	#Dorfuchs{
+		margin-top:5%;
+	    z-index:1000;
+        float:left;	
+		color:white;
+		font-family:arial;
+		font-size:30px;
+		height:1000px;
+		width:80%;
+        padding-left: 300px;
+        padding-right:10%;
+		padding-top:10%;
+		
+	}
 #linksunten{
 width: 95%;
 height:100px;
@@ -22,13 +49,14 @@ border:1;
 position:absolute;
 bottom:0px;
 left:0px;
-	text-align: justify;
+	text-align: center;
 	font-family: arial;
 	color: #FFFFFF99;
 font-weight: lighter;
 }
 #div2{
 margin:4%;
+margin-top:6%;
 float:right;
 transition:0.5s;
 margin-right:25%
@@ -97,7 +125,7 @@ body{
     background-color:rgb(52,53,65);
     transition:0.5s;
     zoom: 90%;
-    overflow: hidden;
+overflow:Scrollbar;
     }
 
 #submit{
@@ -106,14 +134,13 @@ width:  150px;
 text-align: center;
 margin:1%;
 margin-bottom:-10%;
-background:rgb(32,33,35) ;
+background:#20212377 ;
 border-color:transparent;
+color:white;
 font-weight: bold;
 border-radius:15px;
-
 font-size:25px;
 font-family:arial;
-color:rgb(255, 255, 255);
 text-decoration:none;
 transition:0.2s;
 }
@@ -125,9 +152,10 @@ transition:0.2s;
     text-align: center;
     margin:1%;
     margin-bottom:-3%;
-    background:rgb(0, 0, 0) ;
-    border-color:transparent;
-    font-weight: bold;
+    background:#20212377 ;
+border-color:transparent;
+color:white;
+font-weight: bold;
     border-radius:15px;
     
     font-size:40px;
@@ -137,7 +165,12 @@ transition:0.2s;
     
     }
     
-    
+    #userinput1, #userinput, #userinput2, #userinput3 {
+        color:white;
+    }
+    ::placeholder{
+        color:white;
+    }
 .input {
 height: 60px;
 width:  60px;
@@ -145,7 +178,7 @@ font-size:150%;
 text-align: center;
 margin:2%;
 margin-bottom:-3%;
-background:rgb(32,33,35) ;
+background:#20212377 ;
 border-color:transparent;
 color:white;
 font-weight: bold;
@@ -188,12 +221,39 @@ border-radius:10%;
         color:white;
         width:100px;
         height:100px;
-        position:absolute;
-        top:140px;
-        right:15px;
+        position:fixed;
+        top:20px;
+        left:225px;
         z-index:2;
         font-size:20px;
         transition:0.5s;
+    }
+	@media (max-width: 1300px){
+        #image{
+            float:right;
+            height:450px;
+            width:800px;
+            background-color:black;
+            margin:5%;
+            margin-top:5%;
+            margin-right:20%;
+            border-radius:10px;
+            transition:0.5s;
+        }
+        h2 {
+            font-size:40px;
+            font-family:arial;
+            color:white;
+            text-decoration:none;
+            text-align:right;
+            }
+            #div2{
+                float:left;
+                margin:8%;
+                margin-right:30%;
+		        margin-top:2%;
+                }
+                
     }
     @media (max-width: 1700px) and (min-height:700px){
 
@@ -207,12 +267,37 @@ border-radius:10%;
             #div2{
                 float:right;
                 margin:8%;
-                margin-right:20%;
-		margin-top:2%;
+                margin-right:25%;
+		margin-top:6%;
                 }
                 
     }
 @media (max-width: 1080px) and (min-height:700px){
+    #image{
+        float:right;
+        height:337.5px;
+        width:600px;
+        background-color:black;
+        margin:5%;
+        margin-top:5%;
+        margin-right:-17%;
+        border-radius:10px;
+        transition:0.5s;
+    }
+    #Dorfuchs{
+		margin-top:5%;
+	    z-index:1000;
+        float:left;	
+		color:white;
+		font-family:arial;
+		font-size:30px;
+		height:1000px;
+		width:80%;
+        padding-left: 10px;
+        padding-right:10%;
+		padding-top:13%;
+		
+	}
     #linksunten{
 	font-size:97%;
         width: 100%;
@@ -231,8 +316,8 @@ border-radius:10%;
     #div2{
         float:none;
         margin:8%;
+	margin-top:15%;
         }
-        
     h2 {
         font-size:30px;
         font-family:arial;
@@ -271,12 +356,12 @@ border-radius:10%;
         }
 
     #div1{
-        display: none;
         overflow:hidden;
         transition:0.5s;
         width:70%;
         height:101%;
         bottom: 0;
+		left:-70%;
         position: fixed;
         background-color:#202123DD;
         border-color:#00000000;
@@ -291,14 +376,17 @@ border-radius:10%;
         color:white;
         width:100px;
         height:100px;
-        position:absolute;
+        position:fixed;
         top:20px;
         left:15px;
         z-index:2;
         font-size:20px;
         transition:0.5s;
     }
-    
+	    #canvas{
+			margin-right:0%;
+			margin-top:5%;
+}
 }
 
 #table{
@@ -364,7 +452,7 @@ color:#00000000;
 border-radius:15px;
 width:0px;
 height:0px;
-position:absolute;
+position:fixed;
 top:20px;
 right:15px;
 font-size:20px;
@@ -378,7 +466,7 @@ transition:0.5s;
     color:white;
     width:200px;
     height:100px;
-    position:absolute;
+    position:fixed;
     top:20px;
     right:15px;
     font-size:20px;

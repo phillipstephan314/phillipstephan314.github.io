@@ -122,10 +122,10 @@ alert('Die erste Ableitung f`x='+a+'*e^x');
 
 }
 function menue(){
-  if (div1.style.display === "none") {
-    div1.style.display = "block";
+  if (div1.style.left === "-70%") {
+    div1.style.left = "0%";
   } else {
-    div1.style.display = "none";
+    div1.style.left = "-70%";
   }
 
 }

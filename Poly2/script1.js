@@ -158,10 +158,10 @@ div1.style.backgroundColor='#27474e';
 table.style.backgroundColor='#cd8b76';
 }
 function menue(){
-    if (div1.style.display === "none") {
-      div1.style.display = "block";
-    } else {
-      div1.style.display = "none";
-    }
-  
+  if (div1.style.left === "-70%") {
+    div1.style.left = "0%";
+  } else {
+    div1.style.left = "-70%";
   }
+
+}

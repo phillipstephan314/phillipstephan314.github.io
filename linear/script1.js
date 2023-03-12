@@ -81,6 +81,8 @@ let div1 = document.getElementById('div1');
 let links = document.getElementById('links');
 let knopf = document.getElementById('b1');
 let table = document.getElementById('table');
+let input = document.getElementsByClassName('input');
+
 function dunkel(){
 
   document.body.style.backgroundColor = 'rgb(52,53,65)';
@@ -111,12 +113,13 @@ b1.style.width='200px';
 b1.style.height='100px';
 
 div1.style.backgroundColor='#27474e';
+input.style.background='#FFFFFFBB';
 }
 function menue(){
-  if (div1.style.display === "none") {
-    div1.style.display = "block";
+  if (div1.style.left === "-70%") {
+    div1.style.left = "0%";
   } else {
-    div1.style.display = "none";
+    div1.style.left = "-70%";
   }
 
 }

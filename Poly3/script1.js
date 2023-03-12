@@ -197,11 +197,11 @@ function ableitung(){
         alert('Die erste Ableitung lautet f`(x)='+3*a+'x^2'+VORZEICHEN+2*b+'x'+VORZEICHEN2+c) 
     }
   }
-  function menue(){
-    if (div1.style.display === "none") {
-      div1.style.display = "block";
-    } else {
-      div1.style.display = "none";
-    }
-  
+function menue(){
+  if (div1.style.left === "-70%") {
+    div1.style.left = "0%";
+  } else {
+    div1.style.left = "-70%";
   }
+
+}

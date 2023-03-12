@@ -5,10 +5,10 @@ let links = document.getElementById('links');
 let knopf = document.getElementById('b1');
 let table = document.getElementById('table');
 let p1 = document.getElementById('p11');
-let input = document.getElementsById('userinput');
-let input1 = document.getElementsById('userinput1');
-let input2 = document.getElementsById('userinput2');
-let input3 = document.getElementsById('userinput3');
+let input = document.getElementById('userinput');
+let input1 = document.getElementById('userinput1');
+let input2 = document.getElementById('userinput2');
+let input3 = document.getElementById('userinput3');
 function dunkel(){
 
   document.body.style.backgroundColor = 'rgb(52,53,65)';
@@ -43,10 +43,10 @@ div1.style.backgroundColor='#27474e';
 table.style.backgroundColor='#cd8b76';
 }
 function menue(){
-  if (div1.style.display === "none") {
-    div1.style.display = "block";
+  if (div1.style.left === "-70%") {
+    div1.style.left = "0%";
   } else {
-    div1.style.display = "none";
+    div1.style.left = "-70%";
   }
 
 }
