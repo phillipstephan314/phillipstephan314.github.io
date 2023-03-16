@@ -70,7 +70,7 @@ function ableitung(){
     return;
   }
   let z=1;
-  ctx.fillStyle = "#44FF44";
+  ctx.fillStyle = "#cd8b76";
 let x=-10;
 while(x<10){
   y=a;

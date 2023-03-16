@@ -134,7 +134,7 @@ function ableitung(){
         alert('keine Funktion gegeben!')
         return;
     }
-    ctx.fillStyle = "#22FF44";
+    ctx.fillStyle = "#cd8b76";
     let x=-10;
     while(x<10){
         y=(3*a*Math.pow(x,2)+2*b*Math.pow(x,1)+c*Math.pow(x,0));

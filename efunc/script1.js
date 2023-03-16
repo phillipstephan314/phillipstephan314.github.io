@@ -107,7 +107,7 @@ return;
 alert('Die erste Ableitung f`x='+a+'*e^x');
   }
   if(a!=0){
-  ctx.fillStyle = "#22FF44";
+  ctx.fillStyle = "#cd8b76";
     let x=-10;
     while(x<10){
         y=(a*Math.pow(Math.E,x));
